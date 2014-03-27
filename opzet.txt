@@ -1,0 +1,34 @@
+VPL
+
+
+
+
+array initiate
+	bevat objecten
+		Vuller
+		Voltooiing container binnen tijd percentage; gehaald binnen tijd aantal / niet-gehaald binnen tijd aantal
+		
+
+
+Dagteam opzetten, ipv grote lijst met iedereen...
+		
+
+
+Lijst met namen, touchable, start een dialog of proces om te kiezen.
+	Aantal kolli
+	Automatisch tijd start vanaf aanmaken, kan eventueel wijzigen andere tijd.
+		als eerder klaar bijhouden. Deze tijd kan in een soort wie staat bovenaan worden bewaard.
+		karrenhalen pauze knop.
+	
+
+
+
+Installer pagina of settings, is hetzelfde.
+	instellen van colli per uur.
+	instellen verschillende moeilijkheidsgraden: Groente, chips, fris etcetera
+
+Werknemers beheer pagina.
+	Het vullen van de lijst van werknemers
+		bevat de eerder genoemde vuller object.
+		
+

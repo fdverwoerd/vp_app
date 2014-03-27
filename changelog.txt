@@ -1,0 +1,27 @@
+Changelog + Known Bugs + To do
+To do:
+- Functie die ervoor zorgt dat de enterknop een nieuwe werknemer toevoegd.
+- Tab laten werken in de app en dialog. Waarschijnlijk met tab index en een scriptje.
+- Volgorde kunnen bepalen op tijd in overzicht. Zelfde volgorde bepaling kan maybe gebruikt worden voor het scoreboard.
+
+- List.js gebruiken voor het scoreboard. List.js is een native js script om lijsten te ordenen. Dit moet easy zijn aan de hand van de data uit werknemers.(List.js is al geincluded.)
+
+
+Bugs:
+Geen die ik weet...
+
+
+Changelog:
+
+
+2013-12-03 Versie 4 0.4 alpha
+1002 - 	Als een container starttijd een heel uur heeft zoals 16:00 word de tijd verkeerd weergegeven, namelijk: 16:0
+		Gefixed
+2013-11-28 Versie 4 0.4 alpha
+999 -	Bug met het verversen van dynamisch geladen content. Ligt aan hoe JQ mobile werkt. Dit is de enige manier die ik heb kunnen vinden. Niet geheel hufterproof, maar genoeg.
+1000 - 	Als container wordt afgevinkt, word nu het bijgeschreven bij totaal gevulde containers van Werknemer.
+1001 - 	Bug waarin de totaalen van werknemers niet werden bijgeschreven in localstorage zodat als je refreshed niet de nieuwe waarden hebt.
+
+2013-11<
+Alle functies: 
+Moet nog beschrijven.

@@ -1,0 +1,148 @@
+
+img { 
+/* grote images worden binnen het scherm gehouden, en zorgt ervoor dat je niet moet scrollen. */
+      	max-width: 100%; 
+	  	box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        
+        border-radius: 1em;
+	      
+}
+.titel {
+	float: left;
+	clear: left;
+}
+#timers {
+	background: azure;
+	
+}
+#timers ul {
+	margin: 0;
+	padding: 0;
+}
+
+#timers ul li {
+	background: lightgrey;
+	list-style: none;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+#werknemers-add {
+	position: absolute;
+	right: 0;
+}
+.canvas {
+	background: pink;
+	display: block;
+}
+hr {
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	margin-top: -1px;
+}
+.werknemer {
+	
+}
+
+
+.dashboardlijst {
+	background: none;
+	margin: 0;
+	padding: 0;
+	
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	
+}
+.dashboardlijst li {
+	display: inline-block;
+	background: white;
+	margin: 0.5em;
+	border: 1px solid #dadada;
+	border-radius: 1em;
+	overflow: hidden;
+	min-width: 16em;
+	max-width: 16em;
+	vertical-align: top;
+}
+.dashboardlijst h3 {
+	padding: 0.5em;
+	margin:0;
+	color: #1071b9;
+	text-shadow: none;
+}
+.dashboardlijst li a {
+	display: inline-block;
+	width: 3.2em;
+	margin-left:0.1em;
+	text-align: center;
+
+}
+.typecontainer {
+	display: inline-block;
+	font-size: 1.4em;
+	color: #1071b9;
+	font-weight: 100;
+}
+.li-in-twee {
+	display: inline-block;
+	padding:0.4em;
+	
+	
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+	
+	vertical-align: top;
+	width: 8em;
+}
+.li-in-twee.container-footer {
+	height: 3.4em;
+}
+.li-in-twee.resterend {
+	text-align: center;
+}
+.black {
+	color: #1071b9;
+}
+.red {
+	color: red;
+}
+.yellow {
+	color: orange;
+}
+.li-in-twee span.taak-start {
+	vertical-align: top;
+}
+.taak-start  {
+	font-size: 1.6em;
+	color: #1171b9;
+	font-weight: 100;
+	text-shadow: none;
+	line-height: 1.8em;
+}
+.background {
+	background: rgba(165,210,253,0.2);
+}
+.verschiltijd {
+	display: inline-block;
+	font-family: Helvetica, Arial, Sans-serif;
+	vertical-align: text-top;
+	padding-right: 0.2em;
+	text-shadow: none;
+}
+.tijd-min {
+	
+	font-size: 3em;
+	font-weight: 100;
+	
+}
+.tijd-sec {
+	padding-top: 0.5em;
+	font-size: 1em;
+	font-weight: 100;
+}
+span.tijd-icoon img {
+	padding-top: 0.3em;
+
+}

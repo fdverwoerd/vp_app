@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>Versie 4 VPL APP</title>
+	<meta name="description" content="Vulploegleider App, maak het plannen van containers makkelijk en inzichtelijk.">
+	
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- For third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+    <!-- Zorgt ervoor dat de URL balk van de browser verdwijnt. -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+	
+	<!-- STYLESHEETS : begin -->
+	<link rel="stylesheet" type="text/css" href="jqm.css">
+	<link rel="stylesheet" type="text/css" href="vpl2.css">
+	<!-- STYLESHEETS : end -->
+	
+	<script src="jq10.js"></script>
+	<script src="jqm.js"></script>
+	<script src="list.js"></script>
+	
+	<!-- beneden neer gezet.<script src="vpl.js"></script> -->
+	
+	</head>
+	<body>
+<!--	HOME begin 	 -->
+	<div data-role="page" id="home">
+
+			<div data-role="header" data-theme="c">
+				<h1>VPL APP</h1>
+				<a href="#opties" id="optiesknop" data-icon="gear" class="ui-btn-right">Opties</a>
+			</div><!-- /header -->
+		
+			<div data-role="content">
+				<img src="apple-touch-icon-144x144-precomposed.png" alt="App Icoon">
+					
+				<h2>Vulploegleider Applicatie</h2>
+							
+				<a href="#dashboard" data-role="button" data-icon="grid" data-theme="b">Dashboard</a>
+				
+				<a href="#score" data-role="button" data-icon="star" data-theme="b">Scoreboard</a>
+				
+				<p style="color:red;">VERSIE 4 - Laatst geüpdatet op: 28 november 2013</p>
+				
+				<p>Houdt makkelijk bij wie welke container aan het vullen is, en hoelang er over gedaan mag worden.</p>
+				<p>In drie simpele stappen registreer je een container en koppel je daar een werknemer plus tijd aan.</p>
+												
+			</div><!-- /content -->
+		</div><!-- page -->
+<!--	EINDE HOME 	 -->
+
+<!--	SCORE begin 	 -->
+	<div data-role="page" id="score">
+
+			<div data-role="header" data-theme="c">
+				<h1>Scoreboard</h1>
+				<a href="#home" data-icon="check" class="ui-btn-left" data-theme="b">Home</a>
+				<!-- <a href="#opties" id="optiesknop" data-icon="gear" class="ui-btn-right">Opties</a> -->
+			</div><!-- /header -->
+		
+			<div data-role="content">
+				<h2>De lijst, de enige echte kanjers!</h2>				
+				<p>nmmr 1
+					nummer 2
+					
+				</p>
+												
+			</div><!-- /content -->
+		</div><!-- page -->
+<!--	EINDE SCORE 	 -->
+
+<!--  SETTINGS	 -->
+<div data-role="page" id="opties">
+
+			<div data-role="header" data-theme="c">
+				<h1>Opties</h1>
+				<a href="#home" data-icon="check" class="ui-btn-left" data-theme="b">Home</a>
+			</div><!-- /header -->
+		
+			<div data-role="content">
+				<p>Colli per uur instellen</p>
+				<div id="colli">
+				
+				</div>				
+				<p>Beheren werknemers</p>
+				<div id="werknemerslijst">
+				<ul class='lijst1' data-role='listview' data-filter='true' data-filter-placeholder='Zoek werknemer' data-inset='true'>
+					<li>Niets</li>
+				</ul>
+							
+				</div>
+				<hr>
+				<label for="name">Nieuwe werknemer Naam + Achternaam</label>
+				<input type="text" id="name" placeholder="Bijv: Jan Jansen" />
+				<input type="button" id="savewerknemer" value="Sla nieuwe werknemer op">
+				<hr>
+				<a href="#reset" id="resetvpl" data-role="button" data-icon="alert" data-theme="e">RESET</a>
+				
+			</div><!--  einde content -->
+</div>
+<!-- 	EINDE SETTINGS	 -->
+<!--	OVERZICHT DASHBOARD	 -->
+		<div data-role="page" id="dashboard">
+			<div data-role="panel" id="mypanel">
+				<div id="containerstartlijst">
+				<ul class='lijst2' data-role='listview' data-filter='true' data-filter-placeholder='Zoek werknemer' data-inset='true'>
+				
+					<li>NOG neits</li>
+				</ul>
+				
+				</div>
+			</div><!-- /panel -->
+				
+			<div data-role="header" data-theme="c">
+				<a href="#home" data-icon="home" class="ui-btn-left" data-theme="c">Home</a>
+				<h1>Dashboard</h1>
+				<a href="#mypanel" id="startcontainerbegin" data-icon="plus" class="ui-btn-right" data-theme="c">Nieuwe opdracht</a>
+			</div><!-- /header -->
+			
+			<div data-role="content">
+				<a href="#nieuwecontainer" id="dialog" data-rel="dialog" data-transition="pop" hidden>x</a>
+				
+				<div id="containers">
+				
+				
+				<img src="images/laod.GIF">
+								
+				</div>
+										
+			</div>
+		
+		</div>
+		
+		<!--	EINDE OVERZICHT DASHBOARD	 -->
+		<!--	creeer timer	 -->
+		<div data-role="dialog" id="nieuwecontainer">
+			<div data-role="header" data-theme="c">
+				<h1>NIEUWE CONTAINER</h1>
+			</div><!-- /header -->
+			
+			<div data-role="content">
+				<form>
+				<div id="cname">Voornaam Achternaam:</div>
+				<label for="aantal">Aantal colli:</label>
+				<input type="number" id="aantal" placeholder="bijv: 65" pattern="[0-9]*">
+				<fieldset data-role="controlgroup">
+				    <legend>Kies een starttijd type:</legend>
+				        <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked">
+				        <label for="radio-choice-1">Vanaf nu <span id="timenow"></span></label>
+				        <input type="radio" disabled="disabled" name="radio-choice-1" id="radio-choice-2" value="choice-2">
+				        <label for="radio-choice-2">Custom starttijd (coming soon)</label>
+				</fieldset>
+				
+					<label for="number-pattern">Kies custom starttijd: (bijv. 13:45)</label>
+					<input disabled="disabled" type="number" name="number" pattern="[0-9]*" id="number-pattern" value="">
+					
+					<label for="select-type">Type container:</label>
+					
+					<select id="select-type" name="select">
+					  <option value="entresol">Entresol handel (mini)</option>
+					  <option value="pak">Pak handel (klein)</option>
+					  <option value="doos">Doos handel (middel)</option>
+					  <option value="bulk">Bulk handel (groot)</option>
+					  
+					</select><br>
+					<hr>
+					
+					<input type="button" id="startcontainer" value="Voeg container toe aan dashboard" data-icon="plus" data-theme="c">
+				</form>
+			</div>
+		
+		</div>
+		<!--	EINDE CREEER TIMER	 -->
+	<script src="vpl4.js"></script>
+	</body>
+		
+</html>
